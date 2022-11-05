@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	<string id="ui_mcm_cozy_campfire_plus_title">
+		<text>Cozy Campfire Plus</text>
+	</string>
+	<string id="ui_mcm_menu_cozy_campfire_plus">
+		<text>Cozy Campfire+</text>
+	</string>
+	<text>Enable Cozy Campfire Plus</text>
+	<string id="ui_mcm_cozy_campfire_plus_cozy_enable">
+		<text>Enable Cozy Campfire Plus</text>
+	</string>
+	<string id="ui_mcm_cozy_campfire_plus_cozy_distance">
+		<text>Maximum Cozy Distance. Defaults to 18 (based on YACS distance). Cozy Campfire original value is 10.</text>
+	</string>
+	<string id="ui_mcm_cozy_campfire_plus_cozy_regen">
+		<text>Rate of Coziness. Defaults to 0.00002 (based on Cozy Campfire).</text>
+	</string>
+</string_table>

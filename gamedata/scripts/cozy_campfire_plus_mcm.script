@@ -1,0 +1,12 @@
+function on_mcm_load()
+    op = {id = "cozy_campfire_plus", sh = true, gr = {
+	    	{id = "banner", type = "slide", text = "ui_mcm_cozy_campfire_plus_title", size= {512,50}, spacing = 20},
+	    	{id = "cozy_enable", type = "check", val = 1, def = true},
+	    	{id = "line", type = "line"},
+			{id = "cozy_distance", type = "track", val = 2, min = 10, max = 28, step = 1, def = 18},
+			{id = "cozy_regen", type = "track", val = 2, min = 0, max = 0.0001, step = 0.00001, def = 0.00002},
+			{id = "line", type = "line"},
+		}
+	}
+    return op
+end

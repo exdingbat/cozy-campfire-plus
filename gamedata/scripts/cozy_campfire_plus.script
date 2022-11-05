@@ -1,0 +1,24 @@
+local cozy_distance = 0
+local cozy_regen = 0
+
+local function load_config()
+	if ui_mcm and ui_mcm.get("campfires_plus_extended/cozy_enable") then
+		cozy_distance = ui_mcm.get("campfires_plus_extended/cozy_distance")
+		cozy_regen = ui_mcm.get("campfires_plus_extended/cozy_regen")
+		return true
+	end
+	return false
+end
+
+local function actor_handle_update()
+	local nearby_campfire = bind_campfire.get_nearby_campfire(cozy_distance, true)
+	if db.actor and nearby_campfire and nearby_campfire.is_on() then
+		db.actor:change_health(cozy_regen)
+	end
+end
+
+function on_game_start()
+	if load_config() then
+		RegisterScriptCallback("actor_on_update", actor_handle_update)
+	end
+end
